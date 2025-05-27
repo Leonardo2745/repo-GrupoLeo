@@ -1,4 +1,3 @@
-import validação from "../Gleice/validadores";
 
 // Aqui você declara uma variável para receber o conteúdo de um id do HTML para ser usado na função.
 const form = document.getElementById('form');
@@ -38,4 +37,3 @@ Template String (${variável}= retorna em tempo real o conteúdo da variável);
 );
 
 
-export default form();

@@ -47,14 +47,3 @@ form.addEventListener('submit', function (event) {
 
 //OBS: inputs do form ja enviam uma mensagem de campo vazio automaticamente, caso não tenha deverá implementar na função;
 
-import form from '../Carlos/conver_de_cumprimento'
-
-function validação(){
-    if(inputNumero === ''){
-        alert('Campo vazio')
-    } else{
-        alert('prossiga')
-    }
-}
-
-export default validação;
