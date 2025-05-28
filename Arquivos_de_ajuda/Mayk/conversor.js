@@ -1,7 +1,7 @@
 
 // Aqui você declara uma variável para receber o conteúdo de um id do HTML para ser usado na função.
 const form = document.getElementById('form');
-const inputMetro = document.getElementById('metro');
+const inputDias = document.getElementById('dias');
 const resultado = document.getElementById('result');
 
 
@@ -19,9 +19,9 @@ form.addEventListener('submit', function (event) {
 /* Para transformar o conteudo do input em valor utiliza-se o ".value"; 
    Para que o valor possa ser utilizado devemos mandá-lo para outra variável;
    parseFloat = faz com que sejam aceitos números com pontos flutuantes, ex: 1.5*/
-    const metros = parseFloat(inputMetro.value);
+    const dias = parseFloat(inputDias.value);
     
-        const centimetros = metros * 100;
+        const horas = dias * 24;
         
 
 /*innerText = insere somente texto em um elemento html usando o seu id;
@@ -29,10 +29,10 @@ Ao inserir o conteúdo do texto deve ser usado ``;
 Template String (${variável}= retorna em tempo real o conteúdo da variável);
 */
 
-        resultado.innerText = `${metros} metros equivalem a ${centimetros} centímetros.`;
+        resultado.innerText = `${dias} dias equivalem a ${horas} horas.`;
 
     // Faz com que o campo fique vazio após a função terminar;
-        inputMetro.value = '';
+        inputDias.value = '';
     }
 );
 
