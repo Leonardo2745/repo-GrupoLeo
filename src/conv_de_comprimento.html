@@ -5,4 +5,77 @@
     4 - O arquivo script terá o mesmo nome do arquivo html só que com a extensão diferente.
 
 
--->
+-->  
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+     <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Calculadoras</a>
+      <nav class="site-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="desconto.html" class="nav-link" data-page="desconto">Calc. Desconto</a></li>
+          <li id="dropdown-menu" onclick="toggleMenu()"> <select id="pageSelector">
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="conv_de_comprimento.html">Conversor de cumprimento</option>
+              <option value="conv_de_massa.html">Conversor de Massa</option>
+              <option value="conv_de_temperatura.html">Conversor de Temperatura</option>
+              <option value="conv_de_volume_e_capac.html">Conversor de Volume</option>
+            </select></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form id="form">
+        <h1>Conversor de Metros para centímetros</h1>
+        <label for="metros">Digite o valor em metros:</label>
+        
+             <input type="number" id="metro" placeholder="Exemplo: 2">
+        
+        <button type="submit" id="btn1">Converter</button>
+        <p id="result1"></p>
+    </form>
+
+    <form id="form">
+        <h2>Conversor de metro para milímetros</h2>
+        <!-- <label for="metros">Digite o valor em metros:</label> -->
+        
+            <!-- <input type="number" id="metro" placeholder="Exemplo: 2"> -->
+        
+        <!-- <button type="submit" id="btn2">Converter</button> -->
+        <p id="result2"></p>
+    </form>
+
+    <form id="form">
+        <h3>Conversor de metro para decímetros</h3>
+        <!-- <label for="metros">Digite o valor em metros:</label> -->
+        
+            <!-- <input type="number" id="metro" placeholder="Exemplo: 2"> -->
+        
+        <!-- <button type="submit" id="btn3">Converter</button> -->
+        <p id="result3"></p>
+    </form>
+
+  </main>
+    
+</body>
+<script type="module" src="./js/conv_de_comprimento.js"></script>
+<script type="module" src="../src/js/common.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
