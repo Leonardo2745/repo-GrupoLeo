@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home – Calculadoras</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body data-page="home">
   <header class="site-header">
     <div class="container">
@@ -13,7 +15,13 @@
       <nav class="site-nav" role="navigation" aria-label="Menu principal">
         <ul class="nav-list">
           <li><a href="desconto.html" class="nav-link" data-page="desconto">Calc. Desconto</a></li>
-          <li><a href="#" class="nav-link">Novo item</a></li>
+          <li id="dropdown-menu" onclick="toggleMenu()"> <select id="pageSelector">
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="conv_de_comprimento.html">Conversor de cumprimento</option>
+              <option value="conv_de_massa.html">Conversor de Massa</option>
+              <option value="conv_de_temperatura.html">Conversor de Temperatura</option>
+              <option value="conv_de_volume_e_capac.html">Conversor de Volume</option>
+            </select></li>
         </ul>
       </nav>
     </div>
@@ -32,5 +40,7 @@
   </main>
 
   <script src="./js/main.js" defer></script>
+  <script type="module" src="./js/common.js"></script>
 </body>
+
 </html>
