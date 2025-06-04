@@ -7,3 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+document.getElementById('pageSelector').addEventListener('change', function () {
+  const selectedValue = this.value;
+  if (selectedValue) {
+    window.location.href = selectedValue;
+  }
+});
+
+
+

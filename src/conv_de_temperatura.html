@@ -2,14 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home – Calculadoras</title>
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body data-page="home">
-  <header class="site-header">
+<body>
+     <header class="site-header">
     <div class="container">
       <a class="logo" href="index.html">Calculadoras</a>
       <nav class="site-nav" role="navigation" aria-label="Menu principal">
@@ -26,21 +25,26 @@
       </nav>
     </div>
   </header>
+  <main>
+    <h1>Conversor de Temperaturas</h1>
+    <label for="temperatura">Temperatura:</label>
+    <input type="number" id="temperatura" placeholder="Digite a temperatura">
 
-  <main class="main-content container">
-    <ul class="menu-list">
-      <li><a href="desconto.html" class="menu-link">Calculadora de Descontos</a></li>
-      <li><a href="#" class="menu-link">Custo de Combustível</a></li>
-      <li><a href="#" class="menu-link">Custo por Medida</a></li>
-      <li><a href="#" class="menu-link">Força/Aceleração</a></li>
-      <li><a href="#" class="menu-link">Conversor de Unidades</a></li>
-      <li><a href="#" class="menu-link">Conversão de Moedas</a></li>
-      <li><a href="#" class="menu-link">Cálculo de IMC</a></li>
-    </ul>
+    <label for="escala">Escala de origem:</label>
+    <select id="escala">
+        <option value="C">Celsius (°C)</option>
+        <option value="F">Fahrenheit (°F)</option>
+        <option value="K">Kelvin (K)</option>
+    </select>
+
+    <button onclick="converter()">Converter</button>
+
+    <h2>Resultados:</h2>
+    <p id="resultado"></p>
   </main>
-
-  <script src="./js/main.js" defer></script>
-  <script type="module" src="./js/common.js"></script>
+    
 </body>
+<script src="./js/conv_de_temperatura.js" defer></script>
+<script src="./js/common.js" defer></script>
 
 </html>
