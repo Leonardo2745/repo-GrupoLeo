@@ -6,7 +6,10 @@ const resultado3 = document.getElementById('result3');
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
-    const metros = parseFloat(inputMetro.value);
+    if (inputMetro.value === '' && isNaN) {
+        alert('Preencha o campo!')
+    } else{
+         const metros = parseFloat(inputMetro.value);
     
        const centímetros = metros * 100;
        resultado1.innerText = `${metros} metros equivalem a ${centímetros} centímetros.`
@@ -17,9 +20,7 @@ form.addEventListener('submit', function (event) {
        
         const decímetros = metros * 10;
         resultado3.innerText = `${metros} metros equivalem a ${decímetros} decímetros.`;
-
-      
-
+    }
         
     }
 );
