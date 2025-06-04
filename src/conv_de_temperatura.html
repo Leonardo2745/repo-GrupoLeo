@@ -1,8 +1,27 @@
-<!-- Para desenvolver seu html é necessário:
-    1 - Criar a esturuta html5 contendo o header, pegue o header do arquivo index.html.
-    2 - O conteudo que irá conter os inputs deverá ser feito dentro da tag main;
-    3 - Não se esqueça de importar o arquivo css e o arquivo script;
-    4 - O arquivo script terá o mesmo nome do arquivo html só que com a extensão diferente.
-    
+<!DOCTYPE html>
+<html lang="pt-BR">
 
--->
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperaturas</title>
+</head>
+
+<body>
+    <h1>Conversor de Temperaturas</h1>
+    <label for="temperatura">Temperatura:</label>
+    <input type="number" id="temperatura" placeholder="Digite a temperatura">
+
+    <label for="escala">Escala de origem:</label>
+    <select id="escala">
+        <option value="C">Celsius (°C)</option>
+        <option value="F">Fahrenheit (°F)</option>
+        <option value="K">Kelvin (K)</option>
+    </select>
+
+    <button onclick="converter()">Converter</button>
+
+    <h2>Resultados:</h2>
+    <p id="resultado"></p>
+    <script src="./js/conv_de_temperatura.js" defer></script>
+</body>
+</html>
