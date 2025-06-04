@@ -15,15 +15,19 @@
     }
 
     // Adiciona um evento de clique ao botão de conversão
-    document.getElementById('btnConverter').addEventListener ('click' )
+    document.getElementById('btnConverter').addEventListener ('click',(event) =>{
+        event.preventDefault();
         const inputValue = parseFloat(document.getElementById('inputValue').value);
         const unMedidaEntrada = document.querySelector('select[name="UnMedidaEntrada"]').value;
         const unMedidaSaida = document.querySelector('select[name="UnMedidaSaida"]').value;
 
         if (!isNaN(inputValue)) {
-            const resultado = converterVolume(inputValue, unMedidaEntrada, unMedidaSaida);
-            document.getElementById('outValue').value = resultado.toFixed(3); // Exibe o resultado com 3 casas decimais
-            document.getElementById('resultConverted').innerText = `Resultado: ${resultado.toFixed(3)} ${unMedidaSaida}`;
+             const resultado = converterVolume(inputValue, unMedidaEntrada, unMedidaSaida);
+            document.getElementById('outValue').value = resultado; // Exibe o resultado com 3 casas decimais
+            document.getElementById('resultConverted').innerText = `Resultado: ${resultado}  ${unMedidaSaida}`;
+            
+          
         } else {
-            alert("Por favor, insira um valor válido.");
+             alert("Por favor, insira um valor válido.");
         }
+    } )
