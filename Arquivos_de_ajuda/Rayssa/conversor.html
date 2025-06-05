@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volume e capacidade</title>
+    <link rel="stylesheet" href="./style-conversor.css">
+</head>
+
+<body>
+   <main>  <div class="main-content">
+        <!-- Valor de entrada -->
+        <label for="UnMedidaEntrada">De: </label>
+        <select name="UnMedidaEntrada">
+            <option value="litro">Litro</option>
+            <option value="ml">Mine Litro</option>
+            <option value="m3">metro cúbicos</option>
+            <option value="cm3">centimetro cúbicos</option>
+        </select>
+        <input type="number" id="inputValue" name="inputValue">
+        <!-- Valor de saída convertido -->
+        <label for="UnMedidaSaida">Para:</label>
+        <select name="UnMedidaSaida">
+            <option value="litro">Litro</option>
+            <option value="ml">Mine Litro</option>
+            <option value="m3">metro cúbicos</option>
+            <option value="cm3">centimetro cúbicos</option>
+        </select>
+        <input type="text" id="outValue" disabled>
+        <div class="convert-content">
+            <button id="btnConverter">Converter</button>
+            <div id="resultConverted">  </div>
+        </div>
+    </div></main>
+   
+</body>
+<script type="module" src="./script-conversor.js"></script>
+</html>
