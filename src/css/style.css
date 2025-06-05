@@ -1,10 +1,16 @@
 /* src/css/style.css */
 :root {
+<<<<<<< HEAD
   --color-bg: #4959ff;
   --color-header: #2139ae;
   --color-text: #000000;
+=======
+  --color-bg: #e5e5e7;
+  --color-header: hsl(225, 43%, 70%);
+  --color-text: #EDEAEA;
+>>>>>>> 6c469cd78b0c9f9e71273cab3c380f71723e4a09
   --color-primary: #6272A4;
-  --color-accent: #E561F7;
+  --color-accent: #cd23e0;
   --color-button-hover: #7080C0;
 }
 
@@ -18,9 +24,14 @@
 
 body {
   font-family: Arial, sans-serif;
+<<<<<<< HEAD
   background-color: #f2f2f2;
   color: #333;
   padding: 20px;
+=======
+  background: rgb(141, 11, 117);
+  color: var(--color-text);
+>>>>>>> 6c469cd78b0c9f9e71273cab3c380f71723e4a09
   min-height: 100vh;
 }
 
@@ -120,7 +131,7 @@ input, select {
   display: block;
   text-decoration: none;
   background: var(--color-text);
-  color: var(--color-bg);
+  color: rgb(83, 197, 205);
   padding: 1rem;
   border-radius: 4px;
   text-align: center;
@@ -129,7 +140,7 @@ input, select {
 }
 
 .menu-link:hover {
-  background: var(--color-bg);
+  background: rgb(219, 146, 219);
   color: var(--color-text);
   border: 1px solid var(--color-text);
 }
@@ -213,3 +224,14 @@ button {
     font-weight: bold;
 }
 
+input {
+  background-color: rgb(58, 194, 239);
+  text-align: center;
+}
+main{
+ 
+  text-align: center;
+}
+nav{
+  display: inline;
+}
