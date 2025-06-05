@@ -174,3 +174,14 @@ body {
   .menu-list { grid-template-columns: 1fr; }
 }
 
+input {
+  background-color: rgb(58, 194, 239);
+  text-align: center;
+}
+main{
+ 
+  text-align: center;
+}
+nav{
+  display: inline;
+}
