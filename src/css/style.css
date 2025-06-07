@@ -4,7 +4,7 @@
   --color-header:#002b00ec;
   --color-text: #ffffff;
   --color-primary: #000000;
-  --color-accent: #000000;
+  --color-accent: #0ef140;
   --color-button-hover: #002b0014;
 }
 
@@ -206,14 +206,12 @@ input, select {
 }
 
 
-input {
-  background-color: rgb(149, 221, 255);
-}
+
 
 button {
     padding: 10px;
-    background-color: #dbdbdb;
-    color: #000a99;
+    background-color: var(--color-header);
+    color: var(--color-text);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -221,12 +219,12 @@ button {
 }
 
 input {
-  background-color: rgb(58, 194, 239);
+  background-color: rgb(182, 183, 184);
   text-align: center;
 }
 main{
- 
   text-align: center;
+  padding: 10rem;
 }
 nav{
   display: inline;
@@ -235,8 +233,14 @@ nav{
 select{
   margin-right: 10px;
   padding: 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-text);
-  background-color: green;
+  background-color: rgb(30, 97, 30);
   font-weight: bold;
+  text-align: center;
+}
+
+option{
+  background: var(--color-text);
+  color: var(--color-bg);
 }
