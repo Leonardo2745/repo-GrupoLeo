@@ -20,11 +20,11 @@
         const inputValue = parseFloat(document.getElementById('inputValue').value);
         const unMedidaEntrada = document.querySelector('select[name="UnMedidaEntrada"]').value;
         const unMedidaSaida = document.querySelector('select[name="UnMedidaSaida"]').value;
-
+        
         if (!isNaN(inputValue)) {
              const resultado = converterVolume(inputValue, unMedidaEntrada, unMedidaSaida);
-            document.getElementById('outValue').value = resultado; // Exibe o resultado com 3 casas decimais
-            document.getElementById('resultConverted').innerText = `Resultado: ${resultado}  ${unMedidaSaida}`;
+            
+            document.getElementById('resultConverted').innerText = ` ${resultado}  ${unMedidaSaida}`;
             
           
         } else {

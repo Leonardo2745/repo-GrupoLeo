@@ -12,14 +12,14 @@ form.addEventListener('submit', function (event) {
          const metros = parseFloat(inputMetro.value);
     
        const centímetros = metros * 100;
-       resultado1.innerText = `${metros} metros equivalem a ${centímetros} centímetros.`
+       resultado1.innerText = `${centímetros} cm`
       
         const milímetros = metros * 1000;
-        resultado2.innerText = `${metros} metros equivalem a ${milímetros} milímetros.`;
+        resultado2.innerText = ` ${milímetros} mm`;
        
        
         const decímetros = metros * 10;
-        resultado3.innerText = `${metros} metros equivalem a ${decímetros} decímetros.`;
+        resultado3.innerText = ` ${decímetros} dm`;
     }
         
     }

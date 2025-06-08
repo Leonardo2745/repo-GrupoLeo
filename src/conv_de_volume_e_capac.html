@@ -27,7 +27,7 @@
           
           <li id="dropdown-menu" onclick="toggleMenu()"> <select id="pageSelector">
               <option value="" disabled selected>Conversores:</option>
-              <option value="conv_de_comprimento.html">Conversor de cumprimento</option>
+              <option value="conv_de_comprimento.html">Conversor de comprimento</option>
               <option value="conv_de_massa.html">Conversor de Massa</option>
               <option value="conv_de_temperatura.html">Conversor de Temperatura</option>
               <option value="conv_de_volume_e_capac.html">Conversor de Volume</option>
@@ -37,22 +37,23 @@
     </div>
   </header>
    <main>  
+    <h1>Conversor de Volume e Capacidade</h1>
     <div id="calc-form">
-    <div class="main-content">
+    
         <!-- Valor de entrada -->
          <div class="campo-entrada">
         <label for="UnMedidaEntrada">De: </label>
          </div>
          <div class="campo-entrada">
         <select name="UnMedidaEntrada">
-            <option value="litro">Litro</option>
-            <option value="ml">Mine Litro</option>
-            <option value="m3">metro cúbicos</option>
-            <option value="cm3">centimetro cúbicos</option>
+            <option value="litro">Litro (L):</option>
+            <option value="ml">Mililitro (ml):</option>
+            <option value="m3">Metros Cúbicos (m3):</option>
+            <option value="cm3">Centimetros Cúbicos (cm3):</option>
         </select>
         </div>
         <div class="campo-entrada">
-        <input type="number" id="inputValue" name="inputValue">
+        <input type="number" id="inputValue" name="inputValue" placeholder="Insira um valor aqui">
    </div>
         <!-- Valor de saída convertido -->
          <div class="campo-entrada">
@@ -60,18 +61,27 @@
         </div>
         <div class="campo-entrada">
         <select name="UnMedidaSaida">
-            <option value="litro">Litro</option>
-            <option value="ml">Mine Litro</option>
-            <option value="m3">metro cúbicos</option>
-            <option value="cm3">centimetro cúbicos</option>
+           <option value="litro">Litro (L):</option>
+            <option value="ml">Mililitro (ml):</option>
+            <option value="m3">Metros Cúbicos (m3):</option>
+            <option value="cm3">Centimetros Cúbicos (cm3):</option>
         </select>
         </div>
-         <div class="campo-entrada"></div>
-        <input type="text" id="outValue" disabled>
-        </div>
-        <div class="convert-content">
+        
+        
+        <div class="campo-entrada">
             <button id="btnConverter">Converter</button>
-            <div id="resultConverted">  </div>
+            </div>
+        <div class="convert-content">
+            
+                <div class="campo-entrada">
+                    <h2>Resultado:</h2>
+                    </div>
+                    <div class="campo-entrada">
+                <div class="resultados" id="resultConverted"> 
+                     </div>
+               </div>
+            </div>
         </div>
     </div>
 </div></main>
