@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+const form = document.getElementById('calc-form');
 const inputMetro = document.getElementById('metro');
 const resultado1 = document.getElementById('result1');
 const resultado2 = document.getElementById('result2');

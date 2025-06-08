@@ -36,30 +36,45 @@
       </nav>
     </div>
   </header>
-   <main>  <div class="main-content">
+   <main>  
+    <div id="calc-form">
+    <div class="main-content">
         <!-- Valor de entrada -->
+         <div class="campo-entrada">
         <label for="UnMedidaEntrada">De: </label>
+         </div>
+         <div class="campo-entrada">
         <select name="UnMedidaEntrada">
             <option value="litro">Litro</option>
             <option value="ml">Mine Litro</option>
             <option value="m3">metro cúbicos</option>
             <option value="cm3">centimetro cúbicos</option>
         </select>
+        </div>
+        <div class="campo-entrada">
         <input type="number" id="inputValue" name="inputValue">
+   </div>
         <!-- Valor de saída convertido -->
+         <div class="campo-entrada">
         <label for="UnMedidaSaida">Para:</label>
+        </div>
+        <div class="campo-entrada">
         <select name="UnMedidaSaida">
             <option value="litro">Litro</option>
             <option value="ml">Mine Litro</option>
             <option value="m3">metro cúbicos</option>
             <option value="cm3">centimetro cúbicos</option>
         </select>
+        </div>
+         <div class="campo-entrada"></div>
         <input type="text" id="outValue" disabled>
+        </div>
         <div class="convert-content">
             <button id="btnConverter">Converter</button>
             <div id="resultConverted">  </div>
         </div>
-    </div></main>
+    </div>
+</div></main>
    
 </body>
 <script type="module" src="./js/conv_de_volume_e_capac.js"></script>
