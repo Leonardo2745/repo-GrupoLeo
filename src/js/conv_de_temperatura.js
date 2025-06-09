@@ -5,7 +5,7 @@ function converter() {
 
     if (temp.value === '' && isNaN) {
         alert('Preencha o campo!');
-        return; 
+        return;
     }
 
     const temp2 = parseFloat(temp.value);

@@ -5,31 +5,37 @@
     4 - O arquivo script terá o mesmo nome do arquivo html só que com a extensão diferente.
 
 
--->  
-    
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-     <header class="site-header">
+  <header class="site-header">
     <div class="container">
       <a class="logo" href="index.html">Calculadoras</a>
       <nav class="site-nav" role="navigation" aria-label="Menu principal">
         <ul class="nav-list">
-          <div class="container"><li><a href="desconto.html" class="nav-link" data-page="desconto">Calc. Desconto</a></li></div>
-          
-          <li id="dropdown-menu" onclick="toggleMenu()"> <select id="pageSelector">
+          <div class="container">
+            <li><a href="desconto.html" class="nav-link" data-page="desconto">Calc. Desconto</a></li>
+          </div>
+
+          <li id="dropdown-menu" onclick="toggleMenu()">
+            <select id="pageSelector">
               <option value="" disabled selected>Conversores:</option>
               <option value="conv_de_comprimento.html">Conversor de comprimento</option>
               <option value="conv_de_massa.html">Conversor de Massa</option>
               <option value="conv_de_temperatura.html">Conversor de Temperatura</option>
               <option value="conv_de_volume_e_capac.html">Conversor de Volume</option>
-            </select></li>
+            </select>
+          </li>
         </ul>
       </nav>
     </div>
@@ -37,53 +43,28 @@
   <main>
     <h1>Conversor de Comprimento</h1>
     <form id="calc-form">
-      
       <div class="campo-entrada">
         <label for="metros">Digite o valor em metros:</label>
-        
         <input type="number" id="metro" placeholder="Insira o valor aqui">
       </div>
       <div class="campo-entrada">
         <button type="submit" id="btn1">Converter</button>
-        
       </div>
-      
+
       <h2>Centímetros (cm):</h2>
-        <p class="resultados" id="result1"></p>
-        <h2>Milímetros (mm):</h2>
-        <!-- <label for="metros">Digite o valor em metros:</label> -->
-        
-            <!-- <input type="number" id="metro" placeholder="Exemplo: 2"> -->
-        
-        <!-- <button type="submit" id="btn2">Converter</button> -->
-        <p class="resultados" id="result2"></p>
-        <h2>Decímetros (dm):</h2>
-        <!-- <label for="metros">Digite o valor em metros:</label> -->
-        
-            <!-- <input type="number" id="metro" placeholder="Exemplo: 2"> -->
-        
-        <!-- <button type="submit" id="btn3">Converter</button> -->
-        <p class="resultados" id="result3"></p>
-    </form>
+      <p class="resultados" id="result1"></p>
+      <h2>Milímetros (mm):</h2>
 
-    <!-- <form id="form">
-    </form>
+      <p class="resultados" id="result2"></p>
+      <h2>Decímetros (dm):</h2>
 
-    <form id="form">
-    </form> -->
+      <p class="resultados" id="result3"></p>
+    </form>
 
   </main>
-    
+
 </body>
 <script type="module" src="./js/conv_de_comprimento.js"></script>
 <script type="module" src="../src/js/common.js"></script>
 
 </html>
-
-
-
-
-
-
-
-
