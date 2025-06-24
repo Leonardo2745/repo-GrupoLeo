@@ -1,8 +1,89 @@
-<!-- Para desenvolver seu html é necessário:
-    1 - Criar a esturuta html5 contendo o header, pegue o header do arquivo index.html.
-    2 - O conteudo que irá conter os inputs deverá ser feito dentro da tag main;
-    3 - Não se esqueça de importar o arquivo css e o arquivo script;
-    4 - O arquivo script terá o mesmo nome do arquivo html só que com a extensão diferente.
-    
+<!DOCTYPE html>
+<html lang="en">
 
--->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massa</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Calculadoras</a>
+      <nav class="site-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list">
+          <div class="container">
+            <li><a href="desconto.html" class="nav-link" data-page="desconto">Calc. Desconto</a></li>
+          </div>
+
+          <li id="dropdown-menu" onclick="toggleMenu()">
+            <select id="pageSelector">
+              <option value="" disabled selected>Conversores:</option>
+              <option value="conv_de_comprimento.html">Conversor de comprimento</option>
+              <option value="conv_de_massa.html">Conversor de Massa</option>
+              <option value="conv_de_temperatura.html">Conversor de Temperatura</option>
+              <option value="conv_de_volume_e_capac.html">Conversor de Volume</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Conversor de Massa</h1>
+    <div id="calc-form">
+
+      <!-- Valor de entrada -->
+      <div class="campo-entrada">
+        <label for="UnMedidaEntrada">De: </label>
+      </div>
+      <div class="campo-entrada">
+        <select name="UnMedidaEntrada">
+          <option value="kg">Quilograma (kg):</option>
+          <option value="g">Grama (g):</option>
+          <option value="mg">Miligrama (mg):</option>
+          <option value="tonelada">Tonelada (tonelada):</option>
+        </select>
+      </div>
+      <div class="campo-entrada">
+        <input type="number" id="inputValue" name="inputValue" placeholder="Insira um valor aqui">
+      </div>
+      <!-- Valor de saída convertido -->
+      <div class="campo-entrada">
+        <label for="UnMedidaSaida">Para:</label>
+      </div>
+      <div class="campo-entrada">
+        <select name="UnMedidaSaida">
+          <option value="kg">Quilograma (kg):</option>
+          <option value="g">Grama(g):</option>
+          <option value="mg">Miligrama(mg):</option>
+          <option value="tonelada">Tonelada (tonelada):</option>
+        </select>
+      </div>
+
+
+      <div class="campo-entrada">
+        <button id="btnConverter">Converter</button>
+      </div>
+      <div class="convert-content">
+
+        <div class="campo-entrada">
+          <h2>Resultado:</h2>
+        </div>
+        <div class="campo-entrada">
+          <div class="resultados" id="resultConverted">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </main>
+
+</body>
+<script type="module" src="./js/conv_de_massa.js"></script>
+<script type="module" src="./js/common.js"></script>
+
+</html>
